@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    width: 80%;
+    height: 100%;
+}
+
+.padre {
+    width: 100%;
+    height: 45%;
+    background-image: url(../img/aguacate2.png);
+}
+
+
+.nav {
+    background-color: #1a581661;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul li {
+    float: left;
+}
+
+.nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 35px;
+    text-decoration: none;
+}
+
+.letras {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 25px;
+}
+
+h1 {
+    background-color: rgba(31, 31, 31, 0.144);
+}
+
+
+button {
+    background-color: rgba(69, 163, 55, 0.73);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+}
+
+button:hover {
+    background-color: rgba(56, 112, 47, 0.73);
+    transition: 0.3s;
+}
+
+.centrar_boton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenido {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.borroso {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px);
+    /* Aplicamos el efecto de desenfoque */
+    z-index: -1;
+    /* Aseguramos que esté detrás del contenido */
+}
+
+.caja {
+    position: relative;
+    width: 26%;
+    height: 550px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.109);
+    color: white;
+}
+
+.caja h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.caja img {
+    width: 85%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.centrar_imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.caja p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-inline: 10px;
+    margin-top: 10px;
+    font-size: large;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(69, 163, 55, 0.73);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    background-color: rgba(63, 134, 52, 0.73);
+    transition: 0.3s;
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    margin-top: 30px;
+    width: 100%;
+    height: 250px;
+}
+
+.footer {
+    background-color: rgba(39, 125, 26, 0.592);
+    padding: 30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+
+.footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: white;
+    font-size: 0.8em;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.footer .row a:hover {
+    color: #000000;
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+@media (max-width:720px) {
+    .footer {
+        text-align: left;
+        padding: 5%;
+    }
+
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+
+    .footer .row a i {
+        margin: 0% 3%;
+    }
+}
+
+
+
+.caja img {
+    width: 100%; /* Ancho máximo de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.caja h2 {
+    font-size: 20px; /* Tamaño del título */
+    margin-bottom: 10px; /* Espacio inferior */
+    text-align: center; /* Centrar el texto */
+}
+
+.caja p {
+    font-size: 16px; /* Tamaño del texto */
+    margin-bottom: 10px; /* Espacio inferior */
+    text-align: justify; /* Justificar el texto */
+}
+
+.boton {
+    display: inline-block; /* Mostrar como bloque en línea */
+    padding: 10px 20px; /* Relleno interno */
+    background-color: rgba(69, 163, 55, 0.73); /* Color de fondo */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.boton:hover {
+    background-color: rgba(63, 134, 52, 0.73); /* Color de fondo al pasar el mouse */
+    transition: 0.3s; /* Transición suave */
+}
+.Tala {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos equitativamente con espacio entre ellos */
+    align-items: center; /* Alinea los elementos verticalmente */
+    margin-top: 20px; /* Ajusta el margen superior */
+    padding: 0; /* Elimina el relleno */
+}
+
+.Tala img, .Tala video {
+    flex-grow: 1; /* Permitir que los elementos crezcan para ocupar el espacio disponible */
+    max-width: 45%; /* Establece el ancho máximo para cada elemento */
+    height: auto; /* Mantiene la proporción de la imagen y el video */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+}
